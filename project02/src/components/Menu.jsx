@@ -3,9 +3,13 @@ import React from "react";
 // React 컴포넌트 만들기
 // 1. 컴포넌트 함수 선언하기 (함수명은 파일명과 동일하게 유지 (권장) )
 //    함수명, 파일명은 항상 대문자로 시작
-const Menu = (props) => {
+const Menu = ({drink, price}) => {
 
+    // 하위 컴포넌트에서의 props 사용
+    // Case 1). 매개변수 props 사용 => props.name
+    // Case 2). 비구조화할당(구조분해할당) {속성명} => 속성명
     // console.log(props);
+    // console.log({drink, price});
 
     // 2. return문을 가지고 있어야 한다
     //    html요소를 return해야한다
@@ -15,8 +19,8 @@ const Menu = (props) => {
             padding: "2%",
             margin: "2%",
         }}>
-            <h1>{props.drink}</h1>
-            <p>{props.price}원</p>
+            <h1>{drink}</h1>
+            <p>{price}원</p>
         </div>
     );
 }

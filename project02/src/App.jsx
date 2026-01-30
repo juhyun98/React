@@ -1,4 +1,5 @@
 import Menu from "./components/Menu";
+import MemberBox from "./components/MemberBox";
 
 // 컴포넌트 export / import
 // 기본적으로 컴포넌트도 JS모듈!
@@ -41,9 +42,13 @@ function App() {
 
   return (
     <>
-    <Menu drink="아이스티" price={3500} />
+    {/* <Menu drink="아이스티" price={3500} />
     <Menu drink="카페모카" price={4000} />
-    <Menu drink="아메리카노" price={saledPrice} />
+    <Menu drink="아메리카노" price={saledPrice} /> */}
+
+    <MemberBox team="팀 크런키" name={"김선관"} name2={"ooo"} name3={"ooo"} name4={"ooo"} />
+    <MemberBox team="팀 크레센도" name={"김도현"} name2={"ooo"} name3={"ooo"} name4={"ooo"} />
+    <MemberBox team="팀 하프스타트" name={"장윤정"} name2={"ooo"} name3={"ooo"} name4={"ooo"} />
     </>
   )
 }
