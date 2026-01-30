@@ -15,10 +15,17 @@ const Ex02 = () => {
           -> static파일은 public 폴더에 저장한다!!
     */
 
-    const [like, setLike] = useState(0);
+    const [like, setLike] = useState("♡");
+    const [likeCount, setlikeCount] = useState(0);
 
     const upLike = () => {
-        setLike(like + 1);
+        if (like == "♡") {
+            setLike("💖");
+            setlikeCount(likeCount + 1);
+        } else {
+            setLike("♡")
+            setlikeCount(likeCount - 1);
+        }
     }
 
     const disLike = () => {
@@ -33,9 +40,14 @@ const Ex02 = () => {
         {/* <img src={img} alt="고양이" /> */}
         {/* public 폴더 방식 */}
         <img width="300px" src="/imgs/catimg.jpg" alt="고양이" />
-        <p>{like}</p>
-        <button onClick={upLike}>좋아요</button>
-        <button onClick={disLike}>싫어요</button>
+        <p>
+            <span 
+                onClick={upLike} 
+                style={{cursor:"pointer"}}>
+                {like}
+            </span>
+            <span>좋아요 {likeCount}개</span>
+        </p>
     </div>
   )
 }
