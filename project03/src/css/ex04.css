@@ -1,0 +1,32 @@
+.box {
+  padding: 5% 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.dice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice-area {
+  margin: 5%;
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice-area h4 {
+  margin-top: 10%;
+}
+
+.dice-area div {
+  border: 1px solid black;
+}
