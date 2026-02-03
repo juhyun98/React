@@ -17,7 +17,10 @@ import { createRoot } from 'react-dom/client'
 
 // ============ [STEP 2. 배열함수를 이용한 렌더링] ============
 // 5. map, filter 함수 사용
-import App from "./example/Ex05.jsx"
+// import App from "./example/Ex05.jsx"
+
+// 6. map, filter함수 실습
+import App from "./example/Ex06.jsx"
 
 createRoot(document.getElementById('root')).render(
     <App />
